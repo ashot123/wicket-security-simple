@@ -10,11 +10,12 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
  * Created by Ashot Karakhanyan on 06-09-2014
  */
 
+// Here it is not necessary because this has access only from authorized page
 @AuthorizeInstantiation("USER")
-public class AnotherHomePage extends WebPage {
+public class HomePage2 extends WebPage {
 
-    public AnotherHomePage(PageParameters parameters) {
+    public HomePage2(PageParameters parameters) {
         super(parameters);
-        add(new Label("message", new Model<>("Welcome to java-assist")));
+        add(new Label("message2", new Model<>("Home Page 2")));
     }
 }

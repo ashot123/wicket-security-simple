@@ -15,6 +15,6 @@ public class HomePage extends WebPage {
 
     public HomePage(PageParameters parameters) {
         super(parameters);
-        add(new Label("message", new Model<>("Welcome to java-assist")));
+        add(new Label("message", new Model<>("Home Page 1")));
     }
 }
