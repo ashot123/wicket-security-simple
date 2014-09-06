@@ -7,14 +7,25 @@
     <version>1.0-SNAPSHOT</version>
     <name>wicket_security_simple Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
+    <properties>
+        <wicket.version>1.5.5</wicket.version>
+    </properties>
+
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-core</artifactId>
+            <version>${wicket.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-auth-roles</artifactId>
+            <version>${wicket.version}</version>
         </dependency>
     </dependencies>
+
     <build>
         <finalName>wicket_security_simple</finalName>
     </build>
